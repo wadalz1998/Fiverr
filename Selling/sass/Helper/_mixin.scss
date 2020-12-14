@@ -1,0 +1,57 @@
+@mixin styleText($fs,$fw,$color){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+@mixin styleHoverText($color) {
+    color: $color;
+}
+@mixin styleIcon($fs,$bd,$py,$px){
+    font-size: $fs;
+    border: 1px solid $bd;
+    padding: $py $px;
+}
+@mixin styleButton($bg-color,$border,$py,$px){
+    background-color: $bg-color;
+    border: 1px solid $border;
+    padding: $py $px;
+    border-radius: $border-radius;
+}
+@mixin styleHoverButton($bg-hover,$border-hover,$color-hover){
+    background-color:$bg-hover ;
+    border-color: $border-hover;
+    color: $color-hover;
+}
+//$scree : ten man hinh 
+@mixin responsive($screen){
+    @if(map-has-key($map:$breakpoints, $key:$screen)){
+        //Neu tim thay man hinh
+        $value:map-get($map:$breakpoints, $key:$screen );
+        @media screen and (max-width:$value){
+            @content;
+        } 
+    }@else{
+        @warn "Man hinh khong phu hop";
+    }
+
+}
+
+@mixin styleHeading (){
+    h2 {
+        text-align: center;
+        color: #222325;
+        font-size: 36px;
+        font-family: macan,helvetica neue,Helvetica,Arial,sans-serif;
+    }
+}
+
+@mixin styleFont (){
+    p {
+        color: rgb(96, 96, 96);
+        font: italic 18px/140% Georgia,'Times New Roman',serif;
+    }
+    h5 {
+        color: rgb(96, 96, 96);
+        font: normal 14px/140% "Macan","Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}

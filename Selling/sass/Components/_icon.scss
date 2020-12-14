@@ -1,0 +1,7 @@
+.fa-search{
+    @include styleIcon($fs-0,$color-gray-3,$pd-1,$pd-0);
+}
+
+.fab{
+    @include styleIcon($fs-0,none,$pd-0,$pd-0);
+}

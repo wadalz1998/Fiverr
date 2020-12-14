@@ -1,0 +1,37 @@
+// không chứa code css
+
+// Helper : chứa những file biến, mixin, function 
+
+@import "./Helper/mixin";
+@import "./Helper/variables";
+
+// Base : chứa những file mặc định của trình duyệt 
+
+@import "./Base/reset";
+
+// vendor: chứa thư viện mà chúng ta sử dụng 
+
+
+
+// Layout : chứa những thành phần chung của trang web banner header footer intro ...
+
+@import "./Layouts/header";
+@import "./Layouts/slogan";
+@import "./Layouts/buyer";
+@import "./Layouts/qa";
+@import "./Layouts/footer";
+
+// component : chứa những phần tử nhỏ như button 
+
+@import "./Components/button";
+@import "./Components/icon";
+
+// Page : chứa thành phần riêng của các trang web khác nhau 
+
+
+// Theme: Chứa những theme chủ đạo khác nhau của trang web 
+
+
+
+
+

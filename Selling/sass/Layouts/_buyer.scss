@@ -1,0 +1,45 @@
+.buyer{
+    @include styleHeading;
+    .buyer__content {
+        width: 82%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        .buyer__item {
+            img{
+                width: 100%;
+                // display block để k bị khoảng cách hàng dưới
+                display: block;
+            }
+            .buyer_info{
+                padding: 60px 25px 0;
+                @include styleFont;
+            }
+            position: relative;
+            .buyer__overplay1 {
+                position: absolute;
+                right: 0;
+                top: 41%;
+                .buyer__tamgiac {
+                    width: 0;
+                    height: 0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-right: 27px solid white;
+                }
+            }
+            .buyer__overplay2 {
+                position: absolute;
+                left: 0;
+                top: 41%;
+                .buyer__tamgiac {
+                    width: 0;
+                    height: 0;
+                    border-top: 20px solid transparent;
+                    border-bottom: 20px solid transparent;
+                    border-left: 27px solid white;
+                }
+            }
+        }
+    }
+}
