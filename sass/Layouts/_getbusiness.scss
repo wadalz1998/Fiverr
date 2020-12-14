@@ -1,0 +1,38 @@
+.getbusiness{
+    padding-bottom: 100px;
+}
+.getbusiness__content {
+    .banner {
+        position: relative;
+        img {
+            width: 100%;
+            background-size: cover;
+        }
+        .bannertext {
+            position: absolute;
+            color: white;
+            top: 100px;
+            left: 100px;
+            h2 {
+                width: 54%;
+                font-size: 48px;
+            }
+            button{
+                padding: 8px 20px;
+                margin-top: 30px;
+                font-weight: $fw-bold;
+                background-color: #1dbf73;
+                border: none;
+                border-radius: 5px;
+                &:hover{
+                    background-color: #19a463;
+                    transition: all 0.5s;
+                }
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

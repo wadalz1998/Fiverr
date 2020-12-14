@@ -1,0 +1,50 @@
+header {
+    padding: $pd-1;
+    @include styleText($fs-0, $color-white-0, $fw-bold);
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    .navbar-brand {
+        img {
+            width: 89px;
+            height: 27px;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+  
+    .btn-header {
+        // border: 1px solid white;
+        padding: 5px 20px;
+        color: white;
+        margin-top: 3px;
+        transition: all 0.1s;
+        p{
+            margin: 0;
+        }
+        &:hover{
+            color: white;
+            text-decoration: none;
+            border: 1px solid #1dbf73;
+            background-color: #1dbf73;
+        }
+    }
+}
+
+@include responsive("large") {
+    .header__responsive__large {
+        display: none;
+    }
+}
+
+@include responsive("medium") {
+    .carousel {
+        .carousel__content {
+            width: 50%;
+        }
+    }
+}

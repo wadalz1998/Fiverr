@@ -1,0 +1,86 @@
+// Footer
+footer {
+    border-top: 1px solid $color-gray-6;
+    .footer__content {
+        width: 93%;
+        margin: 0 auto;
+        padding-top: 3.5rem;
+        .footer__top {
+            border-bottom: 1px solid $color-gray-6;
+            h6 {
+                font-weight: $fw-bold-1;
+                padding-left: $pd-0 + 1;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+                li {
+                    text-decoration: none;
+                    padding: $pd-0 + 2;
+                    a {
+                        color: $color-gray-4;
+                    }
+                }
+            }
+        }
+        .footer__bottom {
+            justify-content: space-between;
+            margin: 0;
+            .left {
+                padding-top: 10px;
+                h5 {
+                    font-weight: $fw-bold-1;
+                    color: $color-gray-4;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin: 2px 0 0 0;
+                    padding-left: $pd-1;
+                    color: $color-gray-2;
+                }
+            }
+            .right {
+                ul {
+                    list-style: none;
+                    li {
+                        display: inline-block;
+                        a {
+                            text-decoration: none;
+                            color: $color-gray-4;
+                            padding: 10px;
+                            font-size: $fs-2;
+                        }
+                        .footer__modal {
+                            .list-group {
+                                a {
+                                    border: none;
+                                    padding: 12px 20px;
+                                    &:hover {
+                                        background-color: $color-gray-2;
+                                        color: $color-gray-4;
+                                    }
+                                }
+                                .active {
+                                    margin-left: -20px;
+                                }
+                            }
+                        }
+                        .enable__scroll {
+                            height: 400px;
+                            overflow-y: auto;
+                        }
+                    }
+                }
+            }
+            .male__border{
+                width: 30px;
+                height: 30px;
+            text-align: center;
+            padding: 4px;
+                border: 1px solid $color-gray-4;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+// footer-modal

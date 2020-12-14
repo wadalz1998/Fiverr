@@ -1,0 +1,32 @@
+.subcate {
+    // margin: 100px 0px 100px;
+    h2 {
+        @include styleText(32px, $color-black-0, $fw-bold);
+    }
+    .subcate__descript {
+        position: relative;
+        text-align: center;
+        img {
+            object-fit: cover;
+            height: 345px;
+            width: 100%;
+            border-radius: 4px;
+            margin-right: 32px;
+            position: relative;
+            transition: opacity .3s ease-in-out;
+        }
+        h4 {
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            small {
+                @include styleText($fs-1, $color-white-0, $fw-normal);
+            }
+            position: absolute;
+            top: 8%;
+            left: 37%;
+            transform: translate(-50%, -20%);
+            @include styleText($fs-3, $color-white-0, $fw-bold);
+        }
+    }
+}

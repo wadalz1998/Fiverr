@@ -1,0 +1,81 @@
+.carousel {
+    position: relative;
+    .carousel__content {
+        position: absolute;
+        top: 30%;
+        left: 3%;
+        z-index: 10;
+        width: 48%;
+        h1 {
+            @include styleText(46px, $color-white-0, $fw-bold);
+            padding-bottom: 24px;
+        }
+        .carousel__form {
+            padding: 0 0 24px;
+            input {
+                .form-control {
+                    padding: $pd-1 !important;
+                    border-radius: 4px 0 0 4px !important;
+                }
+            }
+        }
+        input{
+            border-radius: 5px 0 0 5px;
+        }
+        .btn-carousel{
+            background-color: #1dbf73;
+            color: white;
+            border-radius: 0;
+        }
+        .carousel__popular {
+            display: flex;
+            span {
+                @include styleText(14px, $color-white-0, $fw-bold);
+            }
+            ul {
+                display: flex;
+                li {
+                    list-style-type: none;
+                    margin: 1px 10px 0;
+                    padding: 0 7px 0;
+                    border: 1px solid $color-white-0;
+                    border-radius: 40%;
+                    background-color: transparent;
+                    line-height: px;
+                    border-radius: 40px;
+                    text-align: center;
+                    transition: all 0.5s;
+                    a {
+                        @include styleText(14px, $color-white-0, $fw-normal);
+                        text-decoration: none;
+                        
+                    }
+                    &:hover{
+                        background-color: white;
+                    }
+                    &:hover a{
+                        color:black;
+                    }
+                }
+               
+            }
+            
+        }
+    }
+}
+
+@include responsive("extra-large") {
+    .carousel{
+        .carousel__content{
+            width: 50%;
+        }
+    }
+}
+
+@include responsive("large") {
+    .carousel{
+        .carousel__content{
+            width: 60%;
+        }
+    }
+}
